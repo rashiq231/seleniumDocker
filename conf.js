@@ -1,4 +1,4 @@
 exports.config = {
-  seleniumAddress: "http://0.0.0.0:4444/wd/hub",
+  seleniumAddress: "http://172.20.0.3:5555/wd/hub",
   specs: ["test.js"],
 };
