@@ -23,7 +23,11 @@ services:
   selenium-hub:
     image: selenium/hub:4.0.0-alpha-7-prerelease-20200907
     container_name: selenium-hub
+    networks:
+      - selenium-jenkins
     ports:
       - "4442:4442"
       - "4443:4443"
       - "4444:4444"
+networks:
+  selenium-jenkins:
