@@ -4,9 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                withEnv(["PATH=$PATH:~/.local/bin"]){
-                    sh 'docker-compose -f selenium-grid-3.yml build'
-                }
+                sh 'docker-compose --version'
                 sh 'npm install'
                 sh 'npm run test'
             }
