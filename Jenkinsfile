@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo '$PATH'
+                sh 'docker-compose up'
                 sh 'npm install'
                 sh 'npm run test'
             }
