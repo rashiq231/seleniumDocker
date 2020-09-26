@@ -6,7 +6,7 @@ pipeline {
             steps {
                 sh 'ls -a'
                 sh 'pwd'
-                sh 'docker-compose up'
+                sh '--privileged docker-compose up'
                 
             }
         }
