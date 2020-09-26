@@ -4,10 +4,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'systemctl start docker'
-                sh 'docker-compose up'
+                sh 'ls -a'
+                sh 'docker ps'
                 sh 'npm install'
-                sh 'npm run test'
+                
             }
         }
     }
