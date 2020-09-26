@@ -6,7 +6,6 @@ pipeline {
             steps {
                 sh 'ls -a'
                 sh 'pwd'
-                sh 'docker ps'
                 sh 'docker-compose up'
                 
             }
