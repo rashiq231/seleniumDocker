@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'ls -a'
-                sh 'PWD'
+                sh 'pwd'
                 sh 'docker ps'
                 sh 'npm install'
                 
